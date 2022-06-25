@@ -1,0 +1,26 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "Tesoura",
+    "price": 6
+}
+
+###
+GET http://localhost:4002/products
+
+
+###
+GET http://localhost:4002/products/65f1f73a-682d-4cd9-86f0-e26febba8056
+
+###
+PUT http://localhost:4002/products/6074ac48-1f3e-48ce-8df3-e2fc01f54369
+Content-Type: application/json
+
+{
+    "name": "Caderno Preto",
+    "price": 15
+}
+
+###
+DELETE http://localhost:4002/products/6074ac48-1f3e-48ce-8df3-e2fc01f54369
